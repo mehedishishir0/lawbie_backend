@@ -39,6 +39,11 @@ export const getSellerByIdController = async (req, res) => {
 };
 
 // Delete seller by ID
+
+
+
+
+
 export const deleteSellerByIdController = async (req, res) => {
   try {
     const { id } = req.params;
@@ -48,3 +53,4 @@ export const deleteSellerByIdController = async (req, res) => {
     generateResponse(res, 400, false, "Failed to delete seller", error.message);
   }
 };
+
